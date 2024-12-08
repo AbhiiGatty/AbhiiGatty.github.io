@@ -1,0 +1,48 @@
+section h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+section p {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Editor container styling */
+.editor-container {
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Editor.js box styling */
+#editorjs {
+    min-height: 300px;
+}
+
+/* Target the toolbar search box */
+.cdx-search-field .cdx-search-field__input {
+    padding: 0;
+    margin: 0;
+    height: 45px;
+}
+
+.cdx-search-field__icon {
+    margin-top: 9px;
+}
+
+.cdx-quote__text {
+    min-height: 70px;
+    margin-bottom: 15px;
+}
+
+.cdx-quote__caption{
+    font-size: medium;
+}
+
