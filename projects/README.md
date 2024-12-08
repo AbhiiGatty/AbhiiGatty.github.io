@@ -1,6 +1,4 @@
-# ContentBlocks: EditorJS Content Manager
-
-![ContentBlocks Logo](./images/content_block.svg)
+# [ContentBlocks: EditorJS Content Manager](https://abhiigatty.com/projects/contentblocks/editor.html)
 
 ## About
 ContentBlocks is a simple HTML-based UI built with **Editor.js** and styled using **PicoCSS**. It allows users to:
