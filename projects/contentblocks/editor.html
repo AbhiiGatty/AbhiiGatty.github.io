@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -47,12 +47,29 @@
         <h1>ContentBlocks</h1>
         <p> A simple HTML UI using Editor.js and PicoCSS to create, edit, render, and manage JSON content.</p>
     </section>
-    <div class="container editor-container">
-        <!-- Editor.js container -->
-        <div id="editorjs"></div>
-        <!-- Save button -->
-        <button id="saveButton" class="contrast">Save</button>
+    <div class="container">
+        <div class="container editor-container">
+            <!-- Editor.js container -->
+            <div id="editorjs"></div>
+            <!-- Save button -->
+            <button id="saveButton" class="contrast">Save</button>
+        </div>
+        <hr>
     </div>
+
+    <section class="container" style="margin-top: 2rem;">
+        <h3>JSON Output</h3>
+        <p>Edit the JSON below to update the content in the editor.</p>
+        <article class="centered-json-output" style="margin-top: 2rem; max-width: 800px;">
+            <!-- Loading Message -->
+            <span id="loadingMessage" aria-busy="true">Generating your JSON...</span>
+            <!-- JSON Output -->
+            <div id="jsonOutputContainer" style="display: none;">
+                <textarea id="jsonOutput"></textarea>
+                <button id="copyButton" class="contrast">Copy to Clipboard</button>
+            </div>
+        </article>
+    </section>
 
     <!-- Footer Section -->
     <footer>
@@ -62,6 +79,7 @@
     </footer>
 
     <!-- External JavaScript -->
+    <script src="../../scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
@@ -70,8 +88,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script>
-    <script src="script.js"></script>
-    <script src="../../scripts/main.js"></script>
+    <script src="./scripts/script.js"></script>
+
 </body>
 
 </html>
