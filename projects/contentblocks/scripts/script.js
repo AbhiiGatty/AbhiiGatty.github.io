@@ -130,3 +130,9 @@ document.getElementById('jsonOutput').addEventListener('input', () => {
         console.error('Invalid JSON:', error); // Handle invalid JSON
     }
 });
+
+// Run the update 2 seconds after the page loads
+setTimeout(async () => {
+    const content = await editor.save(); // Save editor content
+    document.getElementById('jsonOutput').textContent = JSON.stringify(content, null, 2); // Update JSON textarea
+}, 1000);
