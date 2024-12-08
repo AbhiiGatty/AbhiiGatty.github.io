@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentBlocks</title>
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.8/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="is-fixed-above-lg" style="padding-top: 1rem; padding-bottom: 1.5rem;">
+        <div class="container">
+            <!-- Logo -->
+            <a href="../../" style="text-decoration: none; color: inherit;">
+                <img src="../../images/ag_logo_black.svg" alt="AG Logo Black" style="width: 4rem; padding-top: 25px;" class="ag-logo" />
+                <i class="fa fa-times" style="text-decoration: none; pointer-events: none; color: grey;" aria-hidden="true"></i>
+                <img src="./images/content_block.svg" alt="Content Blocks Logo Color" style="width: 4rem;border-radius: 50%;" class="contentblocks-logo" />
+            </a>
+            <!-- Navigation -->
+            <nav>
+                <ul class="icons">
+                    <!-- Social Media Links -->
+                    <li><a href="https://github.com/AbhiiGatty" class="contrast"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/abhiigatty/" class="contrast"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/abhiigatty_" class="contrast"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:abhiigatty@gmail.com" class="contrast"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <h1>ContentBlocks</h1>
+        <p> A simple HTML UI using Editor.js and PicoCSS to create, edit, render, and manage JSON content.</p>
+    </section>
+    <div class="container editor-container">
+        <!-- Editor.js container -->
+        <div id="editorjs"></div>
+        <!-- Save button -->
+        <button id="saveButton" class="contrast">Save</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <section style="text-align: center;">
+            <p>© <span id="copyright_year">2024</span>, AbhiiGatty. All rights reserved.</p>
+        </section>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/image@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/code@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script>
+    <script src="script.js"></script>
+    <script src="../../scripts/main.js"></script>
+</body>
+
+</html>
