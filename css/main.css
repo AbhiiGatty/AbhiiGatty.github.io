@@ -3638,3 +3638,43 @@ kbd {
     font-weight: lighter;
     /* background-color: #596374; */
 }
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.headshot {
+    max-width: 90%;
+    height: auto;
+    border-radius: 50%;
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1);
+    /* Microsoft Edge and Firefox 35+ */
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .grid {
+        flex-direction: column;
+    }
+
+    .headshot {
+        max-width: 70%;
+        /* Adjust the size for phone screens */
+    }
+
+    .grid div:nth-child(1) {
+        order: 2;
+    }
+
+    .grid div:nth-child(2) {
+        order: 1;
+    }
+}
